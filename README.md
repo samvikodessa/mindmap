@@ -1,0 +1,2 @@
+# mindmap
+GoIT SoftSkills Homework
