@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem;
-    overflow: hidden;
+    overflow-y: auto;
     transition: transform 0.6s ease, opacity 0.6s ease;
   }
 
@@ -267,53 +267,6 @@
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
-}
-@media (max-height: 850px) {
-  body {
-    overflow-y: auto; /* додає вертикальний скрол якщо потрібно */
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .main-wrapper {
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .circle-container {
-    width: 350px;
-    height: 350px;
-  }
-
-  .circle-center {
-    width: 120px;
-    height: 120px;
-    font-size: 0.9rem;
-  }
-
-  .icon-link {
-    width: 60px;
-    height: 60px;
-  }
-
-  .icon-inner {
-    font-size: 1.3rem;
-  }
-
-  .labels {
-    gap: 1rem;
-  }
-
-  .label {
-    font-size: 1.1rem;
-  }
 }
 </style>
 </head>
