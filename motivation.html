@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мотивація — Зроби це зараз</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root { --highlight: #ff6b6b; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: slideIn 0.8s ease forwards;
+    }
+    body.slide-exit { animation: slideBack 0.6s ease forwards; }
+    @keyframes slideIn {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideBack {
+      0% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+    .content {
+      width: 100%;
+      max-width: 1100px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+    }
+    .card {
+      background: linear-gradient(135deg, #3a1f1f, #2a1616);
+      border: 1px solid var(--highlight);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #ff6b6b44;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px #ff6b6baa;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+    .card p {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .quote {
+      margin-top: 3rem;
+      font-style: italic;
+      border-left: 4px solid var(--highlight);
+      padding-left: 1rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .back-button {
+      margin-top: 3rem;
+      background: transparent;
+      border: 1px solid var(--highlight);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      color: var(--highlight);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover {
+      background: var(--highlight);
+      color: #000;
+      box-shadow: 0 0 15px #ff6b6baa;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1><i class="fas fa-fire"></i> Мотивація</h1>
+    <div class="card-grid">
+      <div class="card">
+        <h3><i class="fas fa-bolt"></i> Дій попри настрій</h3>
+        <p>Найкращий спосіб пробудити мотивацію — почати діяти.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-eye"></i> Візуалізуй успіх</h3>
+        <p>Уявляй якомога яскравіше, чого хочеш досягти. Мозок слідує за картинкою.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-chart-line"></i> Фокусуйся на прогресі</h3>
+        <p>Маленькі перемоги — великий драйвер внутрішнього вогню.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-users"></i> Оточення або піднімає, або тягне вниз</h3>
+        <p>Поруч мають бути ті, хто надихає. Решта — відволікає.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-battery-full"></i> Будь сам собі джерелом енергії</h3>
+        <p>Ніхто не прийде мотивувати тебе щодня. Стань цим для себе.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-running"></i> Натхнення приходить після дії</h3>
+        <p>Спершу рух — потім з’явиться відчуття сенсу.</p>
+      </div>
+    </div>
+    <div class="quote">
+      <p>“Відчуття впевненості приходить з дією. Не чекай натхнення — дій.”<br>— Брайан Трейсі</p>
+    </div>
+    <button class="back-button">
+      <i class="fas fa-arrow-left"></i> Назад
+    </button>
+  </div>
+  <script>
+    document.querySelector('.back-button').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('slide-exit');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 500);
+    });
+  </script>
+</body>
+</html>

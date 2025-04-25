@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Час — Зроби це зараз</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root { --highlight: #4dabf7; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: slideIn 0.8s ease forwards;
+    }
+    body.slide-exit { animation: slideBack 0.6s ease forwards; }
+    @keyframes slideIn {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideBack {
+      0% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+    .content {
+      width: 100%;
+      max-width: 1100px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+    }
+    .card {
+      background: linear-gradient(135deg, #15324f, #0e233b);
+      border: 1px solid var(--highlight);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #4dabf744;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px #4dabf7aa;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+    .card p {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .quote {
+      margin-top: 3rem;
+      font-style: italic;
+      border-left: 4px solid var(--highlight);
+      padding-left: 1rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .back-button {
+      margin-top: 3rem;
+      background: transparent;
+      border: 1px solid var(--highlight);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      color: var(--highlight);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover {
+      background: var(--highlight);
+      color: #000;
+      box-shadow: 0 0 15px #4dabf7aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1><i class="fas fa-clock"></i> Час</h1>
+    <div class="card-grid">
+      <div class="card">
+        <h3><i class="fas fa-stopwatch"></i> Час — найцінніший ресурс</h3>
+        <p>Те, як ти використовуєш свій час, визначає якість твого життя.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-layer-group"></i> Працюй у фокус-блоках</h3>
+        <p>Зосередься на одному завданні. Менше перемикань — більше результату.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-coffee"></i> Починай з важливого</h3>
+        <p>Ранковий фокус — найвища ефективність. Не витрачай його на дрібниці.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-calendar-day"></i> Плануй день звечора</h3>
+        <p>Увечері запиши пріоритети — вранці розум буде знати напрямок.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-ban"></i> Уникай пожирачів часу</h3>
+        <p>Телефон, соцмережі, відкриті вкладки — крадуть години непомітно.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-robot"></i> Автоматизуй повторюване</h3>
+        <p>Скорочуй рутину: шаблони, нагадування, інструменти — звільни час для головного.</p>
+      </div>
+    </div>
+    <div class="quote">
+      <p>“Твій час — це твій життєвий капітал. Інвестуй його мудро.”<br>— Брайан Трейсі</p>
+    </div>
+    <button class="back-button">
+      <i class="fas fa-arrow-left"></i> Назад
+    </button>
+  </div>
+  <script>
+    document.querySelector('.back-button').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('slide-exit');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 500);
+    });
+  </script>
+</body>
+</html>

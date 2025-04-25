@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звички — Зроби це зараз</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root { --highlight: #63e6be; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: slideIn 0.8s ease forwards;
+    }
+    body.slide-exit { animation: slideBack 0.6s ease forwards; }
+    @keyframes slideIn {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideBack {
+      0% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+    .content {
+      width: 100%;
+      max-width: 1100px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+    }
+    .card {
+      background: linear-gradient(135deg, #113c30, #0d2d24);
+      border: 1px solid var(--highlight);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #63e6be44;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px #63e6beaa;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+    .card p {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .quote {
+      margin-top: 3rem;
+      font-style: italic;
+      border-left: 4px solid var(--highlight);
+      padding-left: 1rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .back-button {
+      margin-top: 3rem;
+      background: transparent;
+      border: 1px solid var(--highlight);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      color: var(--highlight);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover {
+      background: var(--highlight);
+      color: #000;
+      box-shadow: 0 0 15px #63e6beaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1><i class="fas fa-repeat"></i> Звички</h1>
+    <div class="card-grid">
+      <div class="card">
+        <h3><i class="fas fa-infinity"></i> Звички керують 95% твого життя</h3>
+        <p>Переважна більшість рішень — автоматичні. Формуй правильні алгоритми.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-step-forward"></i> Почни з одного — але стабільно</h3>
+        <p>Одна змінена звичка запускає ефект доміно в інших сферах.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-redo-alt"></i> Повторення — ключ до автоматизму</h3>
+        <p>21 день — мінімум для стабільного закріплення нової дії.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-clock"></i> Створи щоденну рутину</h3>
+        <p>Ранковий та вечірній сценарій зменшує стрес і підсилює фокус.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-check-circle"></i> Використовуй трекер звичок</h3>
+        <p>Візуальний контроль прогресу створює почуття досягнення і мотивує.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-bullseye"></i> Оточи себе нагадуваннями</h3>
+        <p>Наліпки, нагадування, нотифікації — допомагають не злетіти з колії.</p>
+      </div>
+    </div>
+    <div class="quote">
+      <p>“Спочатку ми формуємо звички, потім вони формують нас.”<br>— Брайан Трейсі</p>
+    </div>
+    <button class="back-button">
+      <i class="fas fa-arrow-left"></i> Назад
+    </button>
+  </div>
+  <script>
+    document.querySelector('.back-button').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('slide-exit');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 500);
+    });
+  </script>
+</body>
+</html>

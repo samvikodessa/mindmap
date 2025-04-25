@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прокрастинація — Зроби це зараз</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root { --highlight: #ffa94d; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+      animation: slideIn 0.8s ease forwards;
+    }
+    body.slide-exit { animation: slideBack 0.6s ease forwards; }
+    @keyframes slideIn {
+      0% { transform: translateX(100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideBack {
+      0% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(100%); opacity: 0; }
+    }
+    .content {
+      width: 100%;
+      max-width: 1100px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+    }
+    .card {
+      background: linear-gradient(135deg, #3a2a10, #2a1e07);
+      border: 1px solid var(--highlight);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px #ffa94d44;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px #ffa94daa;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--highlight);
+    }
+    .card p {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    .quote {
+      margin-top: 3rem;
+      font-style: italic;
+      border-left: 4px solid var(--highlight);
+      padding-left: 1rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .back-button {
+      margin-top: 3rem;
+      background: transparent;
+      border: 1px solid var(--highlight);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      color: var(--highlight);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .back-button:hover {
+      background: var(--highlight);
+      color: #000;
+      box-shadow: 0 0 15px #ffa94daa;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1><i class="fas fa-frog"></i> Прокрастинація</h1>
+    <div class="card-grid">
+      <div class="card">
+        <h3><i class="fas fa-frog"></i> “З’їж жабу” — зроби важке першим</h3>
+        <p>Найнеприємніше завдання відкладається найбільше — і створює найбільше тиску.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-walking"></i> Рух лікує страх</h3>
+        <p>Почни — і страх розчиниться в дії.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-cut"></i> Поділи складне на дрібне</h3>
+        <p>Чим простіше крок — тим легше почати. Прогрес починається з руху.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-bell-slash"></i> Позбудься тригерів відкладання</h3>
+        <p>Вимкни сповіщення, прибери хаос, створюй тишу для концентрації.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-heartbeat"></i> Працюй у комфортному темпі</h3>
+        <p>Постійність — важливіша за ривок. Маленькими кроками щодня.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-play-circle"></i> Винайди «пусковий ритуал»</h3>
+        <p>Один звук, дія або фраза запускає режим роботи.</p>
+      </div>
+    </div>
+    <div class="quote">
+      <p>“Зроби щось — будь-що. Це ліпше, ніж думати і переживати.”<br>— Брайан Трейсі</p>
+    </div>
+    <button class="back-button">
+      <i class="fas fa-arrow-left"></i> Назад
+    </button>
+  </div>
+  <script>
+    document.querySelector('.back-button').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('slide-exit');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 500);
+    });
+  </script>
+</body>
+</html>
