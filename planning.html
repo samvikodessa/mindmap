@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Планування — Зроби це зараз</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Планування — Зроби це зараз</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<style>
     :root { --highlight: #c77dff; }
     body {
       margin: 0;
@@ -94,44 +95,105 @@
       box-shadow: 0 0 15px #c77dffaa;
     }
   </style>
-</head>
+<style>
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .labels {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .circle-container {
+    width: 100vw;
+    height: 380px;
+    transform: scale(0.9);
+  }
+
+  .circle-center {
+    width: 120px;
+    height: 120px;
+    font-size: 0.85rem;
+  }
+
+  .icon-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-inner {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .nav a, .buttons a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+</style></head>
 <body>
-  <div class="content">
-    <h1><i class="fas fa-list-check"></i> Планування</h1>
-    <div class="card-grid">
-      <div class="card">
-        <h3><i class="fas fa-pen-nib"></i> Став цілі письмово</h3>
-        <p>Ціль без запису — просто бажання. Записані цілі мають силу дії.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-percent"></i> Принцип Парето 80/20</h3>
-        <p>20% зусиль дають 80% результату. Фокусуйся на головному.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-list-ol"></i> Метод ABCDE</h3>
-        <p>Класифікуй завдання за критичністю. “A” — робити, “E” — відкинути.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-calendar-check"></i> Щоденне планування</h3>
-        <p>Починай день зі списку. Це створює фокус і економить час.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-mountain"></i> Визнач великі камені</h3>
-        <p>Що важливіше — те перше. Спочатку “каміння”, потім “пісок”.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-moon"></i> Плануй ввечері — вигравай зранку</h3>
-        <p>Підготуй завдання на завтра — розум прокидається з орієнтиром.</p>
-      </div>
-    </div>
-    <div class="quote">
-      <p>“Кожна хвилина, витрачена на планування, економить десять хвилин у виконанні.”<br>— Брайан Трейсі</p>
-    </div>
-    <button class="back-button">
-      <i class="fas fa-arrow-left"></i> Назад
+<div class="content">
+<h1><i class="fas fa-list-check"></i> Планування</h1>
+<div class="card-grid">
+<div class="card">
+<h3><i class="fas fa-pen-nib"></i> Став цілі письмово</h3>
+<p>Ціль без запису — просто бажання. Записані цілі мають силу дії.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-percent"></i> Принцип Парето 80/20</h3>
+<p>20% зусиль дають 80% результату. Фокусуйся на головному.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-list-ol"></i> Метод ABCDE</h3>
+<p>Класифікуй завдання за критичністю. “A” — робити, “E” — відкинути.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-calendar-check"></i> Щоденне планування</h3>
+<p>Починай день зі списку. Це створює фокус і економить час.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-mountain"></i> Визнач великі камені</h3>
+<p>Що важливіше — те перше. Спочатку “каміння”, потім “пісок”.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-moon"></i> Плануй ввечері — вигравай зранку</h3>
+<p>Підготуй завдання на завтра — розум прокидається з орієнтиром.</p>
+</div>
+</div>
+<div class="quote">
+<p>“Кожна хвилина, витрачена на планування, економить десять хвилин у виконанні.”<br/>— Брайан Трейсі</p>
+</div>
+<button class="back-button">
+<i class="fas fa-arrow-left"></i> Назад
     </button>
-  </div>
-  <script>
+</div>
+<script>
     document.querySelector('.back-button').addEventListener('click', function(e) {
       e.preventDefault();
       document.body.classList.add('slide-exit');

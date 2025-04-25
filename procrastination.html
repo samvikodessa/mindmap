@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Прокрастинація — Зроби це зараз</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Прокрастинація — Зроби це зараз</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<style>
     :root { --highlight: #ffa94d; }
     body {
       margin: 0;
@@ -94,44 +95,105 @@
       box-shadow: 0 0 15px #ffa94daa;
     }
   </style>
-</head>
+<style>
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .labels {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .circle-container {
+    width: 100vw;
+    height: 380px;
+    transform: scale(0.9);
+  }
+
+  .circle-center {
+    width: 120px;
+    height: 120px;
+    font-size: 0.85rem;
+  }
+
+  .icon-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-inner {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .nav a, .buttons a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+</style></head>
 <body>
-  <div class="content">
-    <h1><i class="fas fa-frog"></i> Прокрастинація</h1>
-    <div class="card-grid">
-      <div class="card">
-        <h3><i class="fas fa-frog"></i> “З’їж жабу” — зроби важке першим</h3>
-        <p>Найнеприємніше завдання відкладається найбільше — і створює найбільше тиску.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-walking"></i> Рух лікує страх</h3>
-        <p>Почни — і страх розчиниться в дії.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-cut"></i> Поділи складне на дрібне</h3>
-        <p>Чим простіше крок — тим легше почати. Прогрес починається з руху.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-bell-slash"></i> Позбудься тригерів відкладання</h3>
-        <p>Вимкни сповіщення, прибери хаос, створюй тишу для концентрації.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-heartbeat"></i> Працюй у комфортному темпі</h3>
-        <p>Постійність — важливіша за ривок. Маленькими кроками щодня.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-play-circle"></i> Винайди «пусковий ритуал»</h3>
-        <p>Один звук, дія або фраза запускає режим роботи.</p>
-      </div>
-    </div>
-    <div class="quote">
-      <p>“Зроби щось — будь-що. Це ліпше, ніж думати і переживати.”<br>— Брайан Трейсі</p>
-    </div>
-    <button class="back-button">
-      <i class="fas fa-arrow-left"></i> Назад
+<div class="content">
+<h1><i class="fas fa-frog"></i> Прокрастинація</h1>
+<div class="card-grid">
+<div class="card">
+<h3><i class="fas fa-frog"></i> “З’їж жабу” — зроби важке першим</h3>
+<p>Найнеприємніше завдання відкладається найбільше — і створює найбільше тиску.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-walking"></i> Рух лікує страх</h3>
+<p>Почни — і страх розчиниться в дії.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-cut"></i> Поділи складне на дрібне</h3>
+<p>Чим простіше крок — тим легше почати. Прогрес починається з руху.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-bell-slash"></i> Позбудься тригерів відкладання</h3>
+<p>Вимкни сповіщення, прибери хаос, створюй тишу для концентрації.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-heartbeat"></i> Працюй у комфортному темпі</h3>
+<p>Постійність — важливіша за ривок. Маленькими кроками щодня.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-play-circle"></i> Винайди «пусковий ритуал»</h3>
+<p>Один звук, дія або фраза запускає режим роботи.</p>
+</div>
+</div>
+<div class="quote">
+<p>“Зроби щось — будь-що. Це ліпше, ніж думати і переживати.”<br/>— Брайан Трейсі</p>
+</div>
+<button class="back-button">
+<i class="fas fa-arrow-left"></i> Назад
     </button>
-  </div>
-  <script>
+</div>
+<script>
     document.querySelector('.back-button').addEventListener('click', function(e) {
       e.preventDefault();
       document.body.classList.add('slide-exit');

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Час — Зроби це зараз</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Час — Зроби це зараз</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<style>
     :root { --highlight: #4dabf7; }
     body {
       margin: 0;
@@ -94,44 +95,105 @@
       box-shadow: 0 0 15px #4dabf7aa;
     }
   </style>
-</head>
+<style>
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .labels {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .circle-container {
+    width: 100vw;
+    height: 380px;
+    transform: scale(0.9);
+  }
+
+  .circle-center {
+    width: 120px;
+    height: 120px;
+    font-size: 0.85rem;
+  }
+
+  .icon-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-inner {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .nav a, .buttons a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+</style></head>
 <body>
-  <div class="content">
-    <h1><i class="fas fa-clock"></i> Час</h1>
-    <div class="card-grid">
-      <div class="card">
-        <h3><i class="fas fa-stopwatch"></i> Час — найцінніший ресурс</h3>
-        <p>Те, як ти використовуєш свій час, визначає якість твого життя.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-layer-group"></i> Працюй у фокус-блоках</h3>
-        <p>Зосередься на одному завданні. Менше перемикань — більше результату.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-coffee"></i> Починай з важливого</h3>
-        <p>Ранковий фокус — найвища ефективність. Не витрачай його на дрібниці.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-calendar-day"></i> Плануй день звечора</h3>
-        <p>Увечері запиши пріоритети — вранці розум буде знати напрямок.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-ban"></i> Уникай пожирачів часу</h3>
-        <p>Телефон, соцмережі, відкриті вкладки — крадуть години непомітно.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-robot"></i> Автоматизуй повторюване</h3>
-        <p>Скорочуй рутину: шаблони, нагадування, інструменти — звільни час для головного.</p>
-      </div>
-    </div>
-    <div class="quote">
-      <p>“Твій час — це твій життєвий капітал. Інвестуй його мудро.”<br>— Брайан Трейсі</p>
-    </div>
-    <button class="back-button">
-      <i class="fas fa-arrow-left"></i> Назад
+<div class="content">
+<h1><i class="fas fa-clock"></i> Час</h1>
+<div class="card-grid">
+<div class="card">
+<h3><i class="fas fa-stopwatch"></i> Час — найцінніший ресурс</h3>
+<p>Те, як ти використовуєш свій час, визначає якість твого життя.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-layer-group"></i> Працюй у фокус-блоках</h3>
+<p>Зосередься на одному завданні. Менше перемикань — більше результату.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-coffee"></i> Починай з важливого</h3>
+<p>Ранковий фокус — найвища ефективність. Не витрачай його на дрібниці.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-calendar-day"></i> Плануй день звечора</h3>
+<p>Увечері запиши пріоритети — вранці розум буде знати напрямок.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-ban"></i> Уникай пожирачів часу</h3>
+<p>Телефон, соцмережі, відкриті вкладки — крадуть години непомітно.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-robot"></i> Автоматизуй повторюване</h3>
+<p>Скорочуй рутину: шаблони, нагадування, інструменти — звільни час для головного.</p>
+</div>
+</div>
+<div class="quote">
+<p>“Твій час — це твій життєвий капітал. Інвестуй його мудро.”<br/>— Брайан Трейсі</p>
+</div>
+<button class="back-button">
+<i class="fas fa-arrow-left"></i> Назад
     </button>
-  </div>
-  <script>
+</div>
+<script>
     document.querySelector('.back-button').addEventListener('click', function(e) {
       e.preventDefault();
       document.body.classList.add('slide-exit');

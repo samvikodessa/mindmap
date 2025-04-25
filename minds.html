@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мислення — Зроби це зараз</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Мислення — Зроби це зараз</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<style>
     :root { --highlight: #00ffd0; }
     body {
       margin: 0;
@@ -94,44 +95,105 @@
       box-shadow: 0 0 15px #00ffd0aa;
     }
   </style>
-</head>
+<style>
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .labels {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .circle-container {
+    width: 100vw;
+    height: 380px;
+    transform: scale(0.9);
+  }
+
+  .circle-center {
+    width: 120px;
+    height: 120px;
+    font-size: 0.85rem;
+  }
+
+  .icon-link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-inner {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .nav a, .buttons a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  body {
+    padding: 1rem;
+    overflow-y: auto;
+  }
+}
+</style></head>
 <body>
-  <div class="content">
-    <h1><i class="fas fa-brain"></i> Мислення</h1>
-    <div class="card-grid">
-      <div class="card">
-        <h3><i class="fas fa-eye"></i> Контролюй свої думки</h3>
-        <p>Ти стаєш тим, про що думаєш більшість часу. Сконцентруйся на тому, чого хочеш, а не на тому, чого боїшся.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-comment-dots"></i> Говори з собою позитивно</h3>
-        <p>“Я можу це зробити”, “Я собі подобаюсь” — ці прості фрази формують віру в себе.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-search"></i> Знайди сенс у кожному досвіді</h3>
-        <p>Немає поразок — є лише досвід і уроки, які допомагають рости.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-smile"></i> Будь оптимістом</h3>
-        <p>Оптимізм — найцінніша звичка продуктивної людини. Завжди шукай хороше, навіть у проблемах.</p>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-unlock"></i> Не будь заручником обставин</h3>
-        <p>Ти можеш обирати своє ставлення до подій. Це твоя свобода і джерело сили.</p>
-      </div>
-      <div class="card">
-  <h3><i class="fas fa-sync-alt"></i> Розвивай гнучкість мислення</h3>
-  <p>Стратегії змінюються — мета лишається. Не бійся переглянути підхід, якщо попередній не працює.</p>
+<div class="content">
+<h1><i class="fas fa-brain"></i> Мислення</h1>
+<div class="card-grid">
+<div class="card">
+<h3><i class="fas fa-eye"></i> Контролюй свої думки</h3>
+<p>Ти стаєш тим, про що думаєш більшість часу. Сконцентруйся на тому, чого хочеш, а не на тому, чого боїшся.</p>
 </div>
-    </div>
-    <div class="quote">
-      <p>“Остання людська свобода — обирати своє ставлення до обставин, які їй дано.”<br>— Віктор Франкл (цит. з книги)</p>
-    </div>
-    <button class="back-button">
-      <i class="fas fa-arrow-left"></i> Назад
+<div class="card">
+<h3><i class="fas fa-comment-dots"></i> Говори з собою позитивно</h3>
+<p>“Я можу це зробити”, “Я собі подобаюсь” — ці прості фрази формують віру в себе.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-search"></i> Знайди сенс у кожному досвіді</h3>
+<p>Немає поразок — є лише досвід і уроки, які допомагають рости.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-smile"></i> Будь оптимістом</h3>
+<p>Оптимізм — найцінніша звичка продуктивної людини. Завжди шукай хороше, навіть у проблемах.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-unlock"></i> Не будь заручником обставин</h3>
+<p>Ти можеш обирати своє ставлення до подій. Це твоя свобода і джерело сили.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-sync-alt"></i> Розвивай гнучкість мислення</h3>
+<p>Стратегії змінюються — мета лишається. Не бійся переглянути підхід, якщо попередній не працює.</p>
+</div>
+</div>
+<div class="quote">
+<p>“Остання людська свобода — обирати своє ставлення до обставин, які їй дано.”<br/>— Віктор Франкл (цит. з книги)</p>
+</div>
+<button class="back-button">
+<i class="fas fa-arrow-left"></i> Назад
     </button>
-  </div>
-  <script>
+</div>
+<script>
     document.querySelector('.back-button').addEventListener('click', function(e) {
       e.preventDefault();
       document.body.classList.add('slide-exit');
